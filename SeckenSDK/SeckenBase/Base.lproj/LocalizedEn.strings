@@ -1,0 +1,69 @@
+/* 
+  LocalizedEn.strings
+  CreateSDK
+
+  Created by Secken_ck on 15/10/9.
+  Copyright © 2015年 Secken_ck. All rights reserved.
+*/
+
+"UnknownError"                      = "Unknown Error";
+"ALTER_TIP"                         = "Notice";
+"CONFIRM"                           = "CONFIRM";
+"CANCEL"                            = "Cancel";
+"REQUEST_TIME_OUT"                  = "The request timed out.";
+"VOICE_CONFIRM_TITLE"               = "Voice UI";
+"VOICE_CONFIRM_TIP_TRAIN"           = "Please train your voice first";
+"VOICE_CONFIRM_TIP_LOAD"            = "Loading…";
+"VOICE_CONFIRM_TIP_READ_NUM"        = "Please read the numbers in a seemly speed";
+"VOICE_CONFIRM_TIP_VERIFY"          = "Verify success";
+
+
+
+"300062" = "Authentication time out";
+"300063" = "There's more than one people in your picture";
+"300064" =  "There's no people in your picture";
+"300065" =  "Face recognition failed";
+"300066" =  "Face recognition system failed";
+"40001" =  "uploaded parameters error";
+"40002" =  "uploaded parameters error";
+"40003" =  "uploaded parameters error";
+"40004" =  "uploaded parameters error";
+"40005" =  "App_id does not exits";
+"40006" =  "Verification token failed";
+"40007" =  "No authentication information";
+"40008" =  "QR Code time out";
+"40009" =  "event_id does not exits";
+"40010" =  "event_id is not activited";
+"40011" =  "Too large picture";
+"40012" =  "Face recognition is ready";
+"40013" =  "Face recognition does not match";
+"40014" =  "set appid in cache failed";
+
+"50001" =  "uploaded parameters error";
+"50002" =  "binding timeout";
+"50003" =  "qrcode error";
+"50004" =  "request timeout";
+"50005" =  "Fail to add user";
+"50006" =  "Fail to delete user";
+"50007" =  "Fail to refresh push_id";
+"50008" =  "Fail to add picture";
+"50009" =  "Fail to add voice id";
+"50010" =  "Fail to delete voice id";
+"50011" =  "Fail to upload picture";
+"50012" =  "Fail to add voice information";
+"50013" =  "Fail to delete picture";
+"50014" =  "Fail to delete voice information";
+"50015" =  "Fail to upload pushid";
+"50016" =  "Fail to logout";
+"50017" =  "Fail to add user";
+// 客户端错误码
+"-1009" =  "Network failure";
+"60002" =  "Wrong data format";
+"60003" =  "uploaded parameters error";
+"60004" =  "Server error";
+"60005" =  "Signature error";
+"3840" = "Request failed: bad gateway";
+"-1022" = "Network failure";
+"-1003" = "A server with the specified hostname could not be found.";
+
+"60006" = "Can't use";

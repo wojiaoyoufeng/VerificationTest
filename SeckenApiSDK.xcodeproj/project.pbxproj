@@ -1,0 +1,1407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		18ED3FF11BC64F1200D80790 /* CommonSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 18ED3FF21BC64F1200D80790 /* Build configuration list for PBXAggregateTarget "CommonSDK" */;
+			buildPhases = (
+				18ED3FF71BC64F5F00D80790 /* ShellScript */,
+			);
+			dependencies = (
+				18ED40B11BC7C60800D80790 /* PBXTargetDependency */,
+			);
+			name = CommonSDK;
+			productName = CommonSDK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1800D9D71BBBC2B9006809D2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1800D9D61BBBC2B9006809D2 /* AudioToolbox.framework */; };
+		1800D9DA1BBBC2C9006809D2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 189F911E1BAE82750021E473 /* libz.tbd */; };
+		1800D9DB1BBBC2EF006809D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189F91F21BB01F7B0021E473 /* UIKit.framework */; };
+		1800D9DC1BBBC315006809D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1800D95D1BBBB545006809D2 /* AVFoundation.framework */; };
+		1846D5C51BE9B7B500D8F3A6 /* SeckenAFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1846D5C41BE9B7B500D8F3A6 /* SeckenAFNetworking.h */; settings = {ASSET_TAGS = (); }; };
+		1863FC3D1BB566150014389F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1863FC3C1BB566140014389F /* MobileCoreServices.framework */; };
+		1863FC3F1BB5661C0014389F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1863FC3E1BB5661C0014389F /* SystemConfiguration.framework */; };
+		189F8F461BAE7EE00021E473 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 189F8F451BAE7EE00021E473 /* main.m */; };
+		189F8F491BAE7EE00021E473 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 189F8F481BAE7EE00021E473 /* AppDelegate.m */; };
+		189F8F4C1BAE7EE00021E473 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189F8F4B1BAE7EE00021E473 /* ViewController.m */; };
+		189F8F4F1BAE7EE00021E473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189F8F4D1BAE7EE00021E473 /* Main.storyboard */; };
+		189F8F511BAE7EE00021E473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189F8F501BAE7EE00021E473 /* Assets.xcassets */; };
+		189F8F541BAE7EE00021E473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189F8F521BAE7EE00021E473 /* LaunchScreen.storyboard */; };
+		18C607891BF4347C002DE154 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 189F911E1BAE82750021E473 /* libz.tbd */; };
+		18C6078D1BF43547002DE154 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C6078C1BF43547002DE154 /* CFNetwork.framework */; };
+		18C621B41C102041003F3B62 /* SeckenImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18C621B31C102041003F3B62 /* SeckenImage.bundle */; settings = {ASSET_TAGS = (); }; };
+		18C6F1671BD4F19B00A6497F /* SeckenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ED3EB21BC64D8600D80790 /* SeckenSDK.framework */; };
+		18C6F1681BD4F19B00A6497F /* SeckenSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18ED3EB21BC64D8600D80790 /* SeckenSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18CAECDF1BF05F5600C22882 /* SeckenGCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CAECDB1BF05F5600C22882 /* SeckenGCDAsyncSocket.h */; settings = {ASSET_TAGS = (); }; };
+		18CAECE01BF05F5600C22882 /* SeckenGCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CAECDC1BF05F5600C22882 /* SeckenGCDAsyncSocket.m */; settings = {ASSET_TAGS = (); }; };
+		18CAECE11BF05F5600C22882 /* SeckenGCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CAECDD1BF05F5600C22882 /* SeckenGCDAsyncUdpSocket.h */; settings = {ASSET_TAGS = (); }; };
+		18CAECE21BF05F5600C22882 /* SeckenGCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CAECDE1BF05F5600C22882 /* SeckenGCDAsyncUdpSocket.m */; settings = {ASSET_TAGS = (); }; };
+		18CC5E1F1BEB00B3000DEE12 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CC5E1E1BEB00B3000DEE12 /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		18CC5E211BEB3B46000DEE12 /* TestFace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18CC5E201BEB3B46000DEE12 /* TestFace.jpg */; settings = {ASSET_TAGS = (); }; };
+		18ED3F601BC64E5900D80790 /* SeckenAESCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EBF1BC64E5900D80790 /* SeckenAESCrypt.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F611BC64E5900D80790 /* SeckenAESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3EC01BC64E5900D80790 /* SeckenAESCrypt.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3F621BC64E5900D80790 /* SeckenBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EC11BC64E5900D80790 /* SeckenBase64.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F631BC64E5900D80790 /* SeckenBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3EC21BC64E5900D80790 /* SeckenBase64.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3F641BC64E5900D80790 /* SeckenCommonCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EC31BC64E5900D80790 /* SeckenCommonCrypto.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F651BC64E5900D80790 /* SeckenCommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3EC41BC64E5900D80790 /* SeckenCommonCrypto.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3F671BC64E5900D80790 /* SeckenAppConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EC91BC64E5900D80790 /* SeckenAppConst.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F681BC64E5900D80790 /* SeckenBaseInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3ECA1BC64E5900D80790 /* SeckenBaseInfo.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F691BC64E5900D80790 /* SeckenBaseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3ECB1BC64E5900D80790 /* SeckenBaseInfo.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3F6A1BC64E5900D80790 /* SecKenKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3ECE1BC64E5900D80790 /* SecKenKeychain.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F6B1BC64E5900D80790 /* SecKenKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3ECF1BC64E5900D80790 /* SecKenKeychain.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3F6C1BC64E5900D80790 /* SecKenKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3ED01BC64E5900D80790 /* SecKenKeychainQuery.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F6D1BC64E5900D80790 /* SecKenKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3ED11BC64E5900D80790 /* SecKenKeychainQuery.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3F6E1BC64E5900D80790 /* SeckenAFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3ED41BC64E5900D80790 /* SeckenAFHTTPRequestOperation.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F6F1BC64E5900D80790 /* SeckenAFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3ED51BC64E5900D80790 /* SeckenAFHTTPRequestOperation.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3F701BC64E5900D80790 /* SeckenAFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3ED61BC64E5900D80790 /* SeckenAFHTTPRequestOperationManager.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F711BC64E5900D80790 /* SeckenAFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3ED71BC64E5900D80790 /* SeckenAFHTTPRequestOperationManager.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3F721BC64E5900D80790 /* SeckenAFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3ED81BC64E5900D80790 /* SeckenAFHTTPSessionManager.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F731BC64E5900D80790 /* SeckenAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3ED91BC64E5900D80790 /* SeckenAFHTTPSessionManager.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3F751BC64E5900D80790 /* SeckenAFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EDB1BC64E5900D80790 /* SeckenAFNetworkReachabilityManager.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F761BC64E5900D80790 /* SeckenAFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3EDC1BC64E5900D80790 /* SeckenAFNetworkReachabilityManager.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3F771BC64E5900D80790 /* SeckenAFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EDD1BC64E5900D80790 /* SeckenAFSecurityPolicy.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F781BC64E5900D80790 /* SeckenAFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3EDE1BC64E5900D80790 /* SeckenAFSecurityPolicy.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3F791BC64E5900D80790 /* SeckenAFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EDF1BC64E5900D80790 /* SeckenAFURLConnectionOperation.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F7A1BC64E5900D80790 /* SeckenAFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3EE01BC64E5900D80790 /* SeckenAFURLConnectionOperation.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3F7B1BC64E5900D80790 /* SeckenAFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EE11BC64E5900D80790 /* SeckenAFURLRequestSerialization.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F7C1BC64E5900D80790 /* SeckenAFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3EE21BC64E5900D80790 /* SeckenAFURLRequestSerialization.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3F7D1BC64E5900D80790 /* SeckenAFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EE31BC64E5900D80790 /* SeckenAFURLResponseSerialization.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F7E1BC64E5900D80790 /* SeckenAFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3EE41BC64E5900D80790 /* SeckenAFURLResponseSerialization.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3F7F1BC64E5900D80790 /* SeckenAFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EE51BC64E5900D80790 /* SeckenAFURLSessionManager.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F801BC64E5900D80790 /* SeckenAFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3EE61BC64E5900D80790 /* SeckenAFURLSessionManager.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3F821BC64E5900D80790 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 18ED3EEA1BC64E5900D80790 /* LICENSE */; settings = {ASSET_TAGS = (); }; };
+		18ED3F831BC64E5900D80790 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EEC1BC64E5900D80790 /* aes.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F841BC64E5900D80790 /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EED1BC64E5900D80790 /* asn1.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F851BC64E5900D80790 /* asn1_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EEE1BC64E5900D80790 /* asn1_mac.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F861BC64E5900D80790 /* asn1t.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EEF1BC64E5900D80790 /* asn1t.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F871BC64E5900D80790 /* bio.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EF01BC64E5900D80790 /* bio.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F881BC64E5900D80790 /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EF11BC64E5900D80790 /* blowfish.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F891BC64E5900D80790 /* bn.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EF21BC64E5900D80790 /* bn.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F8A1BC64E5900D80790 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EF31BC64E5900D80790 /* buffer.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F8B1BC64E5900D80790 /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EF41BC64E5900D80790 /* camellia.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F8C1BC64E5900D80790 /* cast.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EF51BC64E5900D80790 /* cast.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F8D1BC64E5900D80790 /* cmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EF61BC64E5900D80790 /* cmac.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F8E1BC64E5900D80790 /* cms.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EF71BC64E5900D80790 /* cms.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F8F1BC64E5900D80790 /* comp.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EF81BC64E5900D80790 /* comp.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F901BC64E5900D80790 /* conf.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EF91BC64E5900D80790 /* conf.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F911BC64E5900D80790 /* conf_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EFA1BC64E5900D80790 /* conf_api.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F921BC64E5900D80790 /* crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EFB1BC64E5900D80790 /* crypto.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F931BC64E5900D80790 /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EFC1BC64E5900D80790 /* des.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F941BC64E5900D80790 /* des_old.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EFD1BC64E5900D80790 /* des_old.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F951BC64E5900D80790 /* dh.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EFE1BC64E5900D80790 /* dh.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F961BC64E5900D80790 /* dsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3EFF1BC64E5900D80790 /* dsa.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F971BC64E5900D80790 /* dso.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F001BC64E5900D80790 /* dso.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F981BC64E5900D80790 /* dtls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F011BC64E5900D80790 /* dtls1.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F991BC64E5900D80790 /* e_os2.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F021BC64E5900D80790 /* e_os2.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F9A1BC64E5900D80790 /* ebcdic.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F031BC64E5900D80790 /* ebcdic.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F9B1BC64E5900D80790 /* ec.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F041BC64E5900D80790 /* ec.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F9C1BC64E5900D80790 /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F051BC64E5900D80790 /* ecdh.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F9D1BC64E5900D80790 /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F061BC64E5900D80790 /* ecdsa.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F9E1BC64E5900D80790 /* engine.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F071BC64E5900D80790 /* engine.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3F9F1BC64E5900D80790 /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F081BC64E5900D80790 /* err.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FA01BC64E5900D80790 /* evp.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F091BC64E5900D80790 /* evp.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FA11BC64E5900D80790 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F0A1BC64E5900D80790 /* hmac.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FA21BC64E5900D80790 /* idea.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F0B1BC64E5900D80790 /* idea.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FA31BC64E5900D80790 /* krb5_asn.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F0C1BC64E5900D80790 /* krb5_asn.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FA41BC64E5900D80790 /* kssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F0D1BC64E5900D80790 /* kssl.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FA51BC64E5900D80790 /* lhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F0E1BC64E5900D80790 /* lhash.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FA61BC64E5900D80790 /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F0F1BC64E5900D80790 /* md4.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FA71BC64E5900D80790 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F101BC64E5900D80790 /* md5.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FA81BC64E5900D80790 /* mdc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F111BC64E5900D80790 /* mdc2.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FA91BC64E5900D80790 /* modes.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F121BC64E5900D80790 /* modes.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FAA1BC64E5900D80790 /* obj_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F131BC64E5900D80790 /* obj_mac.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FAB1BC64E5900D80790 /* objects.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F141BC64E5900D80790 /* objects.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FAC1BC64E5900D80790 /* ocsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F151BC64E5900D80790 /* ocsp.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FAD1BC64E5900D80790 /* opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F161BC64E5900D80790 /* opensslconf.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FAE1BC64E5900D80790 /* opensslv.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F171BC64E5900D80790 /* opensslv.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FAF1BC64E5900D80790 /* ossl_typ.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F181BC64E5900D80790 /* ossl_typ.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FB01BC64E5900D80790 /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F191BC64E5900D80790 /* pem.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FB11BC64E5900D80790 /* pem2.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F1A1BC64E5900D80790 /* pem2.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FB21BC64E5900D80790 /* pkcs12.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F1B1BC64E5900D80790 /* pkcs12.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FB31BC64E5900D80790 /* pkcs7.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F1C1BC64E5900D80790 /* pkcs7.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FB41BC64E5900D80790 /* pqueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F1D1BC64E5900D80790 /* pqueue.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FB51BC64E5900D80790 /* rand.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F1E1BC64E5900D80790 /* rand.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FB61BC64E5900D80790 /* rc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F1F1BC64E5900D80790 /* rc2.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FB71BC64E5900D80790 /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F201BC64E5900D80790 /* rc4.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FB81BC64E5900D80790 /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F211BC64E5900D80790 /* ripemd.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FB91BC64E5900D80790 /* rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F221BC64E5900D80790 /* rsa.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FBA1BC64E5900D80790 /* safestack.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F231BC64E5900D80790 /* safestack.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FBB1BC64E5900D80790 /* seed.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F241BC64E5900D80790 /* seed.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FBC1BC64E5900D80790 /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F251BC64E5900D80790 /* sha.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FBD1BC64E5900D80790 /* srp.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F261BC64E5900D80790 /* srp.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FBE1BC64E5900D80790 /* srtp.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F271BC64E5900D80790 /* srtp.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FBF1BC64E5900D80790 /* ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F281BC64E5900D80790 /* ssl.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FC01BC64E5900D80790 /* ssl2.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F291BC64E5900D80790 /* ssl2.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FC11BC64E5900D80790 /* ssl23.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F2A1BC64E5900D80790 /* ssl23.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FC21BC64E5900D80790 /* ssl3.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F2B1BC64E5900D80790 /* ssl3.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FC31BC64E5900D80790 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F2C1BC64E5900D80790 /* stack.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FC41BC64E5900D80790 /* symhacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F2D1BC64E5900D80790 /* symhacks.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FC51BC64E5900D80790 /* tls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F2E1BC64E5900D80790 /* tls1.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FC61BC64E5900D80790 /* ts.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F2F1BC64E5900D80790 /* ts.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FC71BC64E5900D80790 /* txt_db.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F301BC64E5900D80790 /* txt_db.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FC81BC64E5900D80790 /* ui.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F311BC64E5900D80790 /* ui.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FC91BC64E5900D80790 /* ui_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F321BC64E5900D80790 /* ui_compat.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FCA1BC64E5900D80790 /* whrlpool.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F331BC64E5900D80790 /* whrlpool.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FCB1BC64E5900D80790 /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F341BC64E5900D80790 /* x509.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FCC1BC64E5900D80790 /* x509_vfy.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F351BC64E5900D80790 /* x509_vfy.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FCD1BC64E5900D80790 /* x509v3.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F361BC64E5900D80790 /* x509v3.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FCE1BC64E5900D80790 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ED3F371BC64E5900D80790 /* libcrypto.a */; settings = {ASSET_TAGS = (); }; };
+		18ED3FCF1BC64E5900D80790 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ED3F381BC64E5900D80790 /* libssl.a */; settings = {ASSET_TAGS = (); }; };
+		18ED3FD01BC64E5900D80790 /* SeckenNetApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F3A1BC64E5900D80790 /* SeckenNetApi.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FD11BC64E5900D80790 /* SeckenNetApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3F3B1BC64E5900D80790 /* SeckenNetApi.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3FD21BC64E5900D80790 /* secken_base_64.c in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3F3D1BC64E5900D80790 /* secken_base_64.c */; settings = {ASSET_TAGS = (); }; };
+		18ED3FD31BC64E5900D80790 /* secken_base_64.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F3E1BC64E5900D80790 /* secken_base_64.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FD41BC64E5900D80790 /* secken_rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3F3F1BC64E5900D80790 /* secken_rsa.c */; settings = {ASSET_TAGS = (); }; };
+		18ED3FD51BC64E5900D80790 /* secken_rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F401BC64E5900D80790 /* secken_rsa.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FD61BC64E5900D80790 /* SeckenOpenSSLRSAWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F411BC64E5900D80790 /* SeckenOpenSSLRSAWrapper.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FD71BC64E5900D80790 /* SeckenOpenSSLRSAWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3F421BC64E5900D80790 /* SeckenOpenSSLRSAWrapper.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3FD81BC64E5900D80790 /* SeckenParamsEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F431BC64E5900D80790 /* SeckenParamsEncrypt.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FD91BC64E5900D80790 /* SeckenParamsEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3F441BC64E5900D80790 /* SeckenParamsEncrypt.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3FDA1BC64E5900D80790 /* SeckenRSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F451BC64E5900D80790 /* SeckenRSA.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FDB1BC64E5900D80790 /* SeckenRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3F461BC64E5900D80790 /* SeckenRSA.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3FDC1BC64E5900D80790 /* SeckenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F481BC64E5900D80790 /* SeckenSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18ED3FDD1BC64E5900D80790 /* SeckenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3F491BC64E5900D80790 /* SeckenSDK.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3FDE1BC64E5900D80790 /* VoiceConfirmSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F4A1BC64E5900D80790 /* VoiceConfirmSDK.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FDF1BC64E5900D80790 /* VoiceConfirmSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3F4B1BC64E5900D80790 /* VoiceConfirmSDK.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3FE01BC64E5900D80790 /* SeckenAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F4D1BC64E5900D80790 /* SeckenAsyncSocket.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FE11BC64E5900D80790 /* SeckenAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3F4E1BC64E5900D80790 /* SeckenAsyncSocket.m */; settings = {ASSET_TAGS = (); }; };
+		18ED3FE21BC64E5900D80790 /* SeckenSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED3F4F1BC64E5900D80790 /* SeckenSingleton.h */; settings = {ASSET_TAGS = (); }; };
+		18ED3FE31BC64E5900D80790 /* SeckenSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED3F501BC64E5900D80790 /* SeckenSingleton.m */; settings = {ASSET_TAGS = (); }; };
+		18ED401E1BC662C300D80790 /* SeckenVoiceConfirm.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED40171BC662C300D80790 /* SeckenVoiceConfirm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18ED401F1BC662C300D80790 /* SeckenVoiceConfirm.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED40181BC662C300D80790 /* SeckenVoiceConfirm.m */; settings = {ASSET_TAGS = (); }; };
+		18ED40201BC662C300D80790 /* SeckenVoiceDelete.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED40191BC662C300D80790 /* SeckenVoiceDelete.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18ED40211BC662C300D80790 /* SeckenVoiceDelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED401A1BC662C300D80790 /* SeckenVoiceDelete.m */; settings = {ASSET_TAGS = (); }; };
+		18ED40221BC662C300D80790 /* SeckenVoiceTrain.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED401B1BC662C300D80790 /* SeckenVoiceTrain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18ED40231BC662C300D80790 /* SeckenVoiceTrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED401C1BC662C300D80790 /* SeckenVoiceTrain.m */; settings = {ASSET_TAGS = (); }; };
+		18ED406D1BC6818700D80790 /* IFlyContact.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED405C1BC6818700D80790 /* IFlyContact.h */; settings = {ASSET_TAGS = (); }; };
+		18ED406E1BC6818700D80790 /* IFlyDataDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED405D1BC6818700D80790 /* IFlyDataDownloader.h */; settings = {ASSET_TAGS = (); }; };
+		18ED406F1BC6818700D80790 /* IFlyDataUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED405E1BC6818700D80790 /* IFlyDataUploader.h */; settings = {ASSET_TAGS = (); }; };
+		18ED40701BC6818700D80790 /* IFlyISVDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED405F1BC6818700D80790 /* IFlyISVDelegate.h */; settings = {ASSET_TAGS = (); }; };
+		18ED40711BC6818700D80790 /* IFlyISVRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED40601BC6818700D80790 /* IFlyISVRecognizer.h */; settings = {ASSET_TAGS = (); }; };
+		18ED40721BC6818700D80790 /* iflyMSC in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ED40611BC6818700D80790 /* iflyMSC */; settings = {ASSET_TAGS = (); }; };
+		18ED40731BC6818700D80790 /* IFlyRecognizerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED40621BC6818700D80790 /* IFlyRecognizerView.h */; settings = {ASSET_TAGS = (); }; };
+		18ED40741BC6818700D80790 /* IFlyRecognizerViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED40631BC6818700D80790 /* IFlyRecognizerViewDelegate.h */; settings = {ASSET_TAGS = (); }; };
+		18ED40751BC6818700D80790 /* IFlySetting.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED40641BC6818700D80790 /* IFlySetting.h */; settings = {ASSET_TAGS = (); }; };
+		18ED40761BC6818700D80790 /* IFlySpeechError.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED40651BC6818700D80790 /* IFlySpeechError.h */; settings = {ASSET_TAGS = (); }; };
+		18ED40771BC6818700D80790 /* IFlySpeechRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED40661BC6818700D80790 /* IFlySpeechRecognizer.h */; settings = {ASSET_TAGS = (); }; };
+		18ED40781BC6818700D80790 /* IFlySpeechRecognizerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED40671BC6818700D80790 /* IFlySpeechRecognizerDelegate.h */; settings = {ASSET_TAGS = (); }; };
+		18ED40791BC6818700D80790 /* IFlySpeechSynthesizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED40681BC6818700D80790 /* IFlySpeechSynthesizer.h */; settings = {ASSET_TAGS = (); }; };
+		18ED407A1BC6818700D80790 /* IFlySpeechSynthesizerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED40691BC6818700D80790 /* IFlySpeechSynthesizerDelegate.h */; settings = {ASSET_TAGS = (); }; };
+		18ED407B1BC6818700D80790 /* IFlySpeechUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED406A1BC6818700D80790 /* IFlySpeechUser.h */; settings = {ASSET_TAGS = (); }; };
+		18ED407C1BC6818700D80790 /* IFlySpeechUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED406B1BC6818700D80790 /* IFlySpeechUtility.h */; settings = {ASSET_TAGS = (); }; };
+		18ED407D1BC6818700D80790 /* IFlyUserWords.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED406C1BC6818700D80790 /* IFlyUserWords.h */; settings = {ASSET_TAGS = (); }; };
+		18ED40AF1BC7B88B00D80790 /* SeckenLocalized.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ED40AE1BC7B88B00D80790 /* SeckenLocalized.h */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18C6F1691BD4F19C00A6497F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189F8F391BAE7EE00021E473 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18ED3EB11BC64D8600D80790;
+			remoteInfo = SeckenSDK;
+		};
+		18ED40B01BC7C60800D80790 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189F8F391BAE7EE00021E473 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18ED3EB11BC64D8600D80790;
+			remoteInfo = SeckenSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18C6F16B1BD4F19C00A6497F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18C6F1681BD4F19B00A6497F /* SeckenSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1800D95D1BBBB545006809D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1800D9D61BBBC2B9006809D2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1800D9D81BBBC2C1006809D2 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		1846D5C41BE9B7B500D8F3A6 /* SeckenAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenAFNetworking.h; sourceTree = "<group>"; };
+		1863FC381BB564A90014389F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1863FC3C1BB566140014389F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1863FC3E1BB5661C0014389F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		189F8F411BAE7EE00021E473 /* SeckenApiSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeckenApiSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		189F8F451BAE7EE00021E473 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		189F8F471BAE7EE00021E473 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		189F8F481BAE7EE00021E473 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		189F8F4A1BAE7EE00021E473 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		189F8F4B1BAE7EE00021E473 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		189F8F4E1BAE7EE00021E473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		189F8F501BAE7EE00021E473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		189F8F531BAE7EE00021E473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		189F8F551BAE7EE00021E473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189F911E1BAE82750021E473 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		189F91F21BB01F7B0021E473 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18C6078C1BF43547002DE154 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		18C607901BF43C90002DE154 /* dylib1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = dylib1.o; path = usr/lib/dylib1.o; sourceTree = SDKROOT; };
+		18C607921BF43CB2002DE154 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		18C621B31C102041003F3B62 /* SeckenImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SeckenImage.bundle; sourceTree = "<group>"; };
+		18CAECDB1BF05F5600C22882 /* SeckenGCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenGCDAsyncSocket.h; sourceTree = "<group>"; };
+		18CAECDC1BF05F5600C22882 /* SeckenGCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenGCDAsyncSocket.m; sourceTree = "<group>"; };
+		18CAECDD1BF05F5600C22882 /* SeckenGCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenGCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		18CAECDE1BF05F5600C22882 /* SeckenGCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenGCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		18CC5E1D1BEB00B3000DEE12 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		18CC5E1E1BEB00B3000DEE12 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		18CC5E201BEB3B46000DEE12 /* TestFace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TestFace.jpg; sourceTree = "<group>"; };
+		18ED3D901BC604C600D80790 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		18ED3EB21BC64D8600D80790 /* SeckenSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SeckenSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18ED3EBF1BC64E5900D80790 /* SeckenAESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenAESCrypt.h; sourceTree = "<group>"; };
+		18ED3EC01BC64E5900D80790 /* SeckenAESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenAESCrypt.m; sourceTree = "<group>"; };
+		18ED3EC11BC64E5900D80790 /* SeckenBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenBase64.h; sourceTree = "<group>"; };
+		18ED3EC21BC64E5900D80790 /* SeckenBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenBase64.m; sourceTree = "<group>"; };
+		18ED3EC31BC64E5900D80790 /* SeckenCommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenCommonCrypto.h; sourceTree = "<group>"; };
+		18ED3EC41BC64E5900D80790 /* SeckenCommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenCommonCrypto.m; sourceTree = "<group>"; };
+		18ED3EC91BC64E5900D80790 /* SeckenAppConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenAppConst.h; sourceTree = "<group>"; };
+		18ED3ECA1BC64E5900D80790 /* SeckenBaseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenBaseInfo.h; sourceTree = "<group>"; };
+		18ED3ECB1BC64E5900D80790 /* SeckenBaseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenBaseInfo.m; sourceTree = "<group>"; };
+		18ED3ECE1BC64E5900D80790 /* SecKenKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecKenKeychain.h; sourceTree = "<group>"; };
+		18ED3ECF1BC64E5900D80790 /* SecKenKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecKenKeychain.m; sourceTree = "<group>"; };
+		18ED3ED01BC64E5900D80790 /* SecKenKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecKenKeychainQuery.h; sourceTree = "<group>"; };
+		18ED3ED11BC64E5900D80790 /* SecKenKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecKenKeychainQuery.m; sourceTree = "<group>"; };
+		18ED3ED41BC64E5900D80790 /* SeckenAFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenAFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		18ED3ED51BC64E5900D80790 /* SeckenAFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenAFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		18ED3ED61BC64E5900D80790 /* SeckenAFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenAFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		18ED3ED71BC64E5900D80790 /* SeckenAFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenAFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		18ED3ED81BC64E5900D80790 /* SeckenAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenAFHTTPSessionManager.h; sourceTree = "<group>"; };
+		18ED3ED91BC64E5900D80790 /* SeckenAFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenAFHTTPSessionManager.m; sourceTree = "<group>"; };
+		18ED3EDB1BC64E5900D80790 /* SeckenAFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenAFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		18ED3EDC1BC64E5900D80790 /* SeckenAFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenAFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		18ED3EDD1BC64E5900D80790 /* SeckenAFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenAFSecurityPolicy.h; sourceTree = "<group>"; };
+		18ED3EDE1BC64E5900D80790 /* SeckenAFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenAFSecurityPolicy.m; sourceTree = "<group>"; };
+		18ED3EDF1BC64E5900D80790 /* SeckenAFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenAFURLConnectionOperation.h; sourceTree = "<group>"; };
+		18ED3EE01BC64E5900D80790 /* SeckenAFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenAFURLConnectionOperation.m; sourceTree = "<group>"; };
+		18ED3EE11BC64E5900D80790 /* SeckenAFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenAFURLRequestSerialization.h; sourceTree = "<group>"; };
+		18ED3EE21BC64E5900D80790 /* SeckenAFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenAFURLRequestSerialization.m; sourceTree = "<group>"; };
+		18ED3EE31BC64E5900D80790 /* SeckenAFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenAFURLResponseSerialization.h; sourceTree = "<group>"; };
+		18ED3EE41BC64E5900D80790 /* SeckenAFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenAFURLResponseSerialization.m; sourceTree = "<group>"; };
+		18ED3EE51BC64E5900D80790 /* SeckenAFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenAFURLSessionManager.h; sourceTree = "<group>"; };
+		18ED3EE61BC64E5900D80790 /* SeckenAFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenAFURLSessionManager.m; sourceTree = "<group>"; };
+		18ED3EEA1BC64E5900D80790 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		18ED3EEC1BC64E5900D80790 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		18ED3EED1BC64E5900D80790 /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		18ED3EEE1BC64E5900D80790 /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
+		18ED3EEF1BC64E5900D80790 /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1t.h; sourceTree = "<group>"; };
+		18ED3EF01BC64E5900D80790 /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		18ED3EF11BC64E5900D80790 /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		18ED3EF21BC64E5900D80790 /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
+		18ED3EF31BC64E5900D80790 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		18ED3EF41BC64E5900D80790 /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		18ED3EF51BC64E5900D80790 /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
+		18ED3EF61BC64E5900D80790 /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmac.h; sourceTree = "<group>"; };
+		18ED3EF71BC64E5900D80790 /* cms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cms.h; sourceTree = "<group>"; };
+		18ED3EF81BC64E5900D80790 /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		18ED3EF91BC64E5900D80790 /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		18ED3EFA1BC64E5900D80790 /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf_api.h; sourceTree = "<group>"; };
+		18ED3EFB1BC64E5900D80790 /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		18ED3EFC1BC64E5900D80790 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		18ED3EFD1BC64E5900D80790 /* des_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des_old.h; sourceTree = "<group>"; };
+		18ED3EFE1BC64E5900D80790 /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		18ED3EFF1BC64E5900D80790 /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsa.h; sourceTree = "<group>"; };
+		18ED3F001BC64E5900D80790 /* dso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dso.h; sourceTree = "<group>"; };
+		18ED3F011BC64E5900D80790 /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtls1.h; sourceTree = "<group>"; };
+		18ED3F021BC64E5900D80790 /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = e_os2.h; sourceTree = "<group>"; };
+		18ED3F031BC64E5900D80790 /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
+		18ED3F041BC64E5900D80790 /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ec.h; sourceTree = "<group>"; };
+		18ED3F051BC64E5900D80790 /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		18ED3F061BC64E5900D80790 /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		18ED3F071BC64E5900D80790 /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		18ED3F081BC64E5900D80790 /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		18ED3F091BC64E5900D80790 /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evp.h; sourceTree = "<group>"; };
+		18ED3F0A1BC64E5900D80790 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		18ED3F0B1BC64E5900D80790 /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
+		18ED3F0C1BC64E5900D80790 /* krb5_asn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krb5_asn.h; sourceTree = "<group>"; };
+		18ED3F0D1BC64E5900D80790 /* kssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kssl.h; sourceTree = "<group>"; };
+		18ED3F0E1BC64E5900D80790 /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
+		18ED3F0F1BC64E5900D80790 /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		18ED3F101BC64E5900D80790 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		18ED3F111BC64E5900D80790 /* mdc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdc2.h; sourceTree = "<group>"; };
+		18ED3F121BC64E5900D80790 /* modes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modes.h; sourceTree = "<group>"; };
+		18ED3F131BC64E5900D80790 /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obj_mac.h; sourceTree = "<group>"; };
+		18ED3F141BC64E5900D80790 /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		18ED3F151BC64E5900D80790 /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocsp.h; sourceTree = "<group>"; };
+		18ED3F161BC64E5900D80790 /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
+		18ED3F171BC64E5900D80790 /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslv.h; sourceTree = "<group>"; };
+		18ED3F181BC64E5900D80790 /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ossl_typ.h; sourceTree = "<group>"; };
+		18ED3F191BC64E5900D80790 /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		18ED3F1A1BC64E5900D80790 /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
+		18ED3F1B1BC64E5900D80790 /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
+		18ED3F1C1BC64E5900D80790 /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs7.h; sourceTree = "<group>"; };
+		18ED3F1D1BC64E5900D80790 /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqueue.h; sourceTree = "<group>"; };
+		18ED3F1E1BC64E5900D80790 /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		18ED3F1F1BC64E5900D80790 /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc2.h; sourceTree = "<group>"; };
+		18ED3F201BC64E5900D80790 /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		18ED3F211BC64E5900D80790 /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		18ED3F221BC64E5900D80790 /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		18ED3F231BC64E5900D80790 /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safestack.h; sourceTree = "<group>"; };
+		18ED3F241BC64E5900D80790 /* seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seed.h; sourceTree = "<group>"; };
+		18ED3F251BC64E5900D80790 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		18ED3F261BC64E5900D80790 /* srp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srp.h; sourceTree = "<group>"; };
+		18ED3F271BC64E5900D80790 /* srtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srtp.h; sourceTree = "<group>"; };
+		18ED3F281BC64E5900D80790 /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		18ED3F291BC64E5900D80790 /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl2.h; sourceTree = "<group>"; };
+		18ED3F2A1BC64E5900D80790 /* ssl23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl23.h; sourceTree = "<group>"; };
+		18ED3F2B1BC64E5900D80790 /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl3.h; sourceTree = "<group>"; };
+		18ED3F2C1BC64E5900D80790 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		18ED3F2D1BC64E5900D80790 /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symhacks.h; sourceTree = "<group>"; };
+		18ED3F2E1BC64E5900D80790 /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tls1.h; sourceTree = "<group>"; };
+		18ED3F2F1BC64E5900D80790 /* ts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts.h; sourceTree = "<group>"; };
+		18ED3F301BC64E5900D80790 /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txt_db.h; sourceTree = "<group>"; };
+		18ED3F311BC64E5900D80790 /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		18ED3F321BC64E5900D80790 /* ui_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_compat.h; sourceTree = "<group>"; };
+		18ED3F331BC64E5900D80790 /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whrlpool.h; sourceTree = "<group>"; };
+		18ED3F341BC64E5900D80790 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		18ED3F351BC64E5900D80790 /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
+		18ED3F361BC64E5900D80790 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
+		18ED3F371BC64E5900D80790 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		18ED3F381BC64E5900D80790 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		18ED3F3A1BC64E5900D80790 /* SeckenNetApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenNetApi.h; sourceTree = "<group>"; };
+		18ED3F3B1BC64E5900D80790 /* SeckenNetApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenNetApi.m; sourceTree = "<group>"; };
+		18ED3F3D1BC64E5900D80790 /* secken_base_64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = secken_base_64.c; sourceTree = "<group>"; };
+		18ED3F3E1BC64E5900D80790 /* secken_base_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secken_base_64.h; sourceTree = "<group>"; };
+		18ED3F3F1BC64E5900D80790 /* secken_rsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = secken_rsa.c; sourceTree = "<group>"; };
+		18ED3F401BC64E5900D80790 /* secken_rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secken_rsa.h; sourceTree = "<group>"; };
+		18ED3F411BC64E5900D80790 /* SeckenOpenSSLRSAWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenOpenSSLRSAWrapper.h; sourceTree = "<group>"; };
+		18ED3F421BC64E5900D80790 /* SeckenOpenSSLRSAWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenOpenSSLRSAWrapper.m; sourceTree = "<group>"; };
+		18ED3F431BC64E5900D80790 /* SeckenParamsEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenParamsEncrypt.h; sourceTree = "<group>"; };
+		18ED3F441BC64E5900D80790 /* SeckenParamsEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenParamsEncrypt.m; sourceTree = "<group>"; };
+		18ED3F451BC64E5900D80790 /* SeckenRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenRSA.h; sourceTree = "<group>"; };
+		18ED3F461BC64E5900D80790 /* SeckenRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenRSA.m; sourceTree = "<group>"; };
+		18ED3F481BC64E5900D80790 /* SeckenSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenSDK.h; sourceTree = "<group>"; };
+		18ED3F491BC64E5900D80790 /* SeckenSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenSDK.m; sourceTree = "<group>"; };
+		18ED3F4A1BC64E5900D80790 /* VoiceConfirmSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConfirmSDK.h; sourceTree = "<group>"; };
+		18ED3F4B1BC64E5900D80790 /* VoiceConfirmSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceConfirmSDK.m; sourceTree = "<group>"; };
+		18ED3F4D1BC64E5900D80790 /* SeckenAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenAsyncSocket.h; sourceTree = "<group>"; };
+		18ED3F4E1BC64E5900D80790 /* SeckenAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenAsyncSocket.m; sourceTree = "<group>"; };
+		18ED3F4F1BC64E5900D80790 /* SeckenSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenSingleton.h; sourceTree = "<group>"; };
+		18ED3F501BC64E5900D80790 /* SeckenSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenSingleton.m; sourceTree = "<group>"; };
+		18ED40171BC662C300D80790 /* SeckenVoiceConfirm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenVoiceConfirm.h; sourceTree = "<group>"; };
+		18ED40181BC662C300D80790 /* SeckenVoiceConfirm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenVoiceConfirm.m; sourceTree = "<group>"; };
+		18ED40191BC662C300D80790 /* SeckenVoiceDelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenVoiceDelete.h; sourceTree = "<group>"; };
+		18ED401A1BC662C300D80790 /* SeckenVoiceDelete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenVoiceDelete.m; sourceTree = "<group>"; };
+		18ED401B1BC662C300D80790 /* SeckenVoiceTrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenVoiceTrain.h; sourceTree = "<group>"; };
+		18ED401C1BC662C300D80790 /* SeckenVoiceTrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeckenVoiceTrain.m; sourceTree = "<group>"; };
+		18ED405C1BC6818700D80790 /* IFlyContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyContact.h; sourceTree = "<group>"; };
+		18ED405D1BC6818700D80790 /* IFlyDataDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyDataDownloader.h; sourceTree = "<group>"; };
+		18ED405E1BC6818700D80790 /* IFlyDataUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyDataUploader.h; sourceTree = "<group>"; };
+		18ED405F1BC6818700D80790 /* IFlyISVDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyISVDelegate.h; sourceTree = "<group>"; };
+		18ED40601BC6818700D80790 /* IFlyISVRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyISVRecognizer.h; sourceTree = "<group>"; };
+		18ED40611BC6818700D80790 /* iflyMSC */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = iflyMSC; sourceTree = "<group>"; };
+		18ED40621BC6818700D80790 /* IFlyRecognizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyRecognizerView.h; sourceTree = "<group>"; };
+		18ED40631BC6818700D80790 /* IFlyRecognizerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyRecognizerViewDelegate.h; sourceTree = "<group>"; };
+		18ED40641BC6818700D80790 /* IFlySetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlySetting.h; sourceTree = "<group>"; };
+		18ED40651BC6818700D80790 /* IFlySpeechError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlySpeechError.h; sourceTree = "<group>"; };
+		18ED40661BC6818700D80790 /* IFlySpeechRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlySpeechRecognizer.h; sourceTree = "<group>"; };
+		18ED40671BC6818700D80790 /* IFlySpeechRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlySpeechRecognizerDelegate.h; sourceTree = "<group>"; };
+		18ED40681BC6818700D80790 /* IFlySpeechSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlySpeechSynthesizer.h; sourceTree = "<group>"; };
+		18ED40691BC6818700D80790 /* IFlySpeechSynthesizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlySpeechSynthesizerDelegate.h; sourceTree = "<group>"; };
+		18ED406A1BC6818700D80790 /* IFlySpeechUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlySpeechUser.h; sourceTree = "<group>"; };
+		18ED406B1BC6818700D80790 /* IFlySpeechUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlySpeechUtility.h; sourceTree = "<group>"; };
+		18ED406C1BC6818700D80790 /* IFlyUserWords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyUserWords.h; sourceTree = "<group>"; };
+		18ED40AE1BC7B88B00D80790 /* SeckenLocalized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeckenLocalized.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		189F8F3E1BAE7EE00021E473 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1800D9DC1BBBC315006809D2 /* AVFoundation.framework in Frameworks */,
+				1800D9DB1BBBC2EF006809D2 /* UIKit.framework in Frameworks */,
+				1800D9DA1BBBC2C9006809D2 /* libz.tbd in Frameworks */,
+				1800D9D71BBBC2B9006809D2 /* AudioToolbox.framework in Frameworks */,
+				1863FC3F1BB5661C0014389F /* SystemConfiguration.framework in Frameworks */,
+				1863FC3D1BB566150014389F /* MobileCoreServices.framework in Frameworks */,
+				18C6F1671BD4F19B00A6497F /* SeckenSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ED3EAE1BC64D8600D80790 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C6078D1BF43547002DE154 /* CFNetwork.framework in Frameworks */,
+				18C607891BF4347C002DE154 /* libz.tbd in Frameworks */,
+				18ED40721BC6818700D80790 /* iflyMSC in Frameworks */,
+				18ED3FCE1BC64E5900D80790 /* libcrypto.a in Frameworks */,
+				18ED3FCF1BC64E5900D80790 /* libssl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		189F8F381BAE7EE00021E473 = {
+			isa = PBXGroup;
+			children = (
+				18C607921BF43CB2002DE154 /* libstdc++.tbd */,
+				18C607901BF43C90002DE154 /* dylib1.o */,
+				18C6078C1BF43547002DE154 /* CFNetwork.framework */,
+				18ED3D901BC604C600D80790 /* Security.framework */,
+				1800D9D81BBBC2C1006809D2 /* AddressBook.framework */,
+				1800D9D61BBBC2B9006809D2 /* AudioToolbox.framework */,
+				1800D95D1BBBB545006809D2 /* AVFoundation.framework */,
+				1863FC3E1BB5661C0014389F /* SystemConfiguration.framework */,
+				1863FC3C1BB566140014389F /* MobileCoreServices.framework */,
+				1863FC381BB564A90014389F /* Foundation.framework */,
+				189F91F21BB01F7B0021E473 /* UIKit.framework */,
+				189F911E1BAE82750021E473 /* libz.tbd */,
+				189F8F431BAE7EE00021E473 /* SeckenApiSDK */,
+				18ED3EB31BC64D8600D80790 /* SeckenSDK */,
+				189F8F421BAE7EE00021E473 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		189F8F421BAE7EE00021E473 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				189F8F411BAE7EE00021E473 /* SeckenApiSDK.app */,
+				18ED3EB21BC64D8600D80790 /* SeckenSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		189F8F431BAE7EE00021E473 /* SeckenApiSDK */ = {
+			isa = PBXGroup;
+			children = (
+				18CC5E201BEB3B46000DEE12 /* TestFace.jpg */,
+				189F8F471BAE7EE00021E473 /* AppDelegate.h */,
+				189F8F481BAE7EE00021E473 /* AppDelegate.m */,
+				189F8F4A1BAE7EE00021E473 /* ViewController.h */,
+				189F8F4B1BAE7EE00021E473 /* ViewController.m */,
+				18CC5E1D1BEB00B3000DEE12 /* MainViewController.h */,
+				18CC5E1E1BEB00B3000DEE12 /* MainViewController.m */,
+				189F8F4D1BAE7EE00021E473 /* Main.storyboard */,
+				189F8F501BAE7EE00021E473 /* Assets.xcassets */,
+				189F8F521BAE7EE00021E473 /* LaunchScreen.storyboard */,
+				189F8F551BAE7EE00021E473 /* Info.plist */,
+				189F8F441BAE7EE00021E473 /* Supporting Files */,
+			);
+			path = SeckenApiSDK;
+			sourceTree = "<group>";
+		};
+		189F8F441BAE7EE00021E473 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				189F8F451BAE7EE00021E473 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18ED3EB31BC64D8600D80790 /* SeckenSDK */ = {
+			isa = PBXGroup;
+			children = (
+				18ED3EBE1BC64E5900D80790 /* SeckenAES */,
+				18ED3EC51BC64E5900D80790 /* SeckenBase */,
+				18ED3ECD1BC64E5900D80790 /* SeckenKeychain */,
+				18ED3ED21BC64E5900D80790 /* SeckenLibs */,
+				18ED3F391BC64E5900D80790 /* SeckenNetApi */,
+				18ED3F3C1BC64E5900D80790 /* SeckenRSA */,
+				18ED3F471BC64E5900D80790 /* SeckenSDK */,
+				18ED3F4C1BC64E5900D80790 /* SeckenSoket */,
+				18ED3F511BC64E5900D80790 /* SeckenVoice */,
+			);
+			path = SeckenSDK;
+			sourceTree = "<group>";
+		};
+		18ED3EBE1BC64E5900D80790 /* SeckenAES */ = {
+			isa = PBXGroup;
+			children = (
+				18ED3EBF1BC64E5900D80790 /* SeckenAESCrypt.h */,
+				18ED3EC01BC64E5900D80790 /* SeckenAESCrypt.m */,
+				18ED3EC11BC64E5900D80790 /* SeckenBase64.h */,
+				18ED3EC21BC64E5900D80790 /* SeckenBase64.m */,
+				18ED3EC31BC64E5900D80790 /* SeckenCommonCrypto.h */,
+				18ED3EC41BC64E5900D80790 /* SeckenCommonCrypto.m */,
+			);
+			path = SeckenAES;
+			sourceTree = "<group>";
+		};
+		18ED3EC51BC64E5900D80790 /* SeckenBase */ = {
+			isa = PBXGroup;
+			children = (
+				18ED40AE1BC7B88B00D80790 /* SeckenLocalized.h */,
+				18ED3EC91BC64E5900D80790 /* SeckenAppConst.h */,
+				18ED3ECA1BC64E5900D80790 /* SeckenBaseInfo.h */,
+				18ED3ECB1BC64E5900D80790 /* SeckenBaseInfo.m */,
+			);
+			path = SeckenBase;
+			sourceTree = "<group>";
+		};
+		18ED3ECD1BC64E5900D80790 /* SeckenKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				18ED3ECE1BC64E5900D80790 /* SecKenKeychain.h */,
+				18ED3ECF1BC64E5900D80790 /* SecKenKeychain.m */,
+				18ED3ED01BC64E5900D80790 /* SecKenKeychainQuery.h */,
+				18ED3ED11BC64E5900D80790 /* SecKenKeychainQuery.m */,
+			);
+			path = SeckenKeychain;
+			sourceTree = "<group>";
+		};
+		18ED3ED21BC64E5900D80790 /* SeckenLibs */ = {
+			isa = PBXGroup;
+			children = (
+				18ED405B1BC6818700D80790 /* MSC */,
+				18ED3ED31BC64E5900D80790 /* AFNetworking */,
+				18ED3EE81BC64E5900D80790 /* openssl */,
+			);
+			path = SeckenLibs;
+			sourceTree = "<group>";
+		};
+		18ED3ED31BC64E5900D80790 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				1846D5C41BE9B7B500D8F3A6 /* SeckenAFNetworking.h */,
+				18ED3ED41BC64E5900D80790 /* SeckenAFHTTPRequestOperation.h */,
+				18ED3ED51BC64E5900D80790 /* SeckenAFHTTPRequestOperation.m */,
+				18ED3ED61BC64E5900D80790 /* SeckenAFHTTPRequestOperationManager.h */,
+				18ED3ED71BC64E5900D80790 /* SeckenAFHTTPRequestOperationManager.m */,
+				18ED3ED81BC64E5900D80790 /* SeckenAFHTTPSessionManager.h */,
+				18ED3ED91BC64E5900D80790 /* SeckenAFHTTPSessionManager.m */,
+				18ED3EDB1BC64E5900D80790 /* SeckenAFNetworkReachabilityManager.h */,
+				18ED3EDC1BC64E5900D80790 /* SeckenAFNetworkReachabilityManager.m */,
+				18ED3EDD1BC64E5900D80790 /* SeckenAFSecurityPolicy.h */,
+				18ED3EDE1BC64E5900D80790 /* SeckenAFSecurityPolicy.m */,
+				18ED3EDF1BC64E5900D80790 /* SeckenAFURLConnectionOperation.h */,
+				18ED3EE01BC64E5900D80790 /* SeckenAFURLConnectionOperation.m */,
+				18ED3EE11BC64E5900D80790 /* SeckenAFURLRequestSerialization.h */,
+				18ED3EE21BC64E5900D80790 /* SeckenAFURLRequestSerialization.m */,
+				18ED3EE31BC64E5900D80790 /* SeckenAFURLResponseSerialization.h */,
+				18ED3EE41BC64E5900D80790 /* SeckenAFURLResponseSerialization.m */,
+				18ED3EE51BC64E5900D80790 /* SeckenAFURLSessionManager.h */,
+				18ED3EE61BC64E5900D80790 /* SeckenAFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		18ED3EE81BC64E5900D80790 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				18ED3EE91BC64E5900D80790 /* include */,
+				18ED3F371BC64E5900D80790 /* libcrypto.a */,
+				18ED3F381BC64E5900D80790 /* libssl.a */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		18ED3EE91BC64E5900D80790 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				18ED3EEA1BC64E5900D80790 /* LICENSE */,
+				18ED3EEB1BC64E5900D80790 /* openssl */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		18ED3EEB1BC64E5900D80790 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				18ED3EEC1BC64E5900D80790 /* aes.h */,
+				18ED3EED1BC64E5900D80790 /* asn1.h */,
+				18ED3EEE1BC64E5900D80790 /* asn1_mac.h */,
+				18ED3EEF1BC64E5900D80790 /* asn1t.h */,
+				18ED3EF01BC64E5900D80790 /* bio.h */,
+				18ED3EF11BC64E5900D80790 /* blowfish.h */,
+				18ED3EF21BC64E5900D80790 /* bn.h */,
+				18ED3EF31BC64E5900D80790 /* buffer.h */,
+				18ED3EF41BC64E5900D80790 /* camellia.h */,
+				18ED3EF51BC64E5900D80790 /* cast.h */,
+				18ED3EF61BC64E5900D80790 /* cmac.h */,
+				18ED3EF71BC64E5900D80790 /* cms.h */,
+				18ED3EF81BC64E5900D80790 /* comp.h */,
+				18ED3EF91BC64E5900D80790 /* conf.h */,
+				18ED3EFA1BC64E5900D80790 /* conf_api.h */,
+				18ED3EFB1BC64E5900D80790 /* crypto.h */,
+				18ED3EFC1BC64E5900D80790 /* des.h */,
+				18ED3EFD1BC64E5900D80790 /* des_old.h */,
+				18ED3EFE1BC64E5900D80790 /* dh.h */,
+				18ED3EFF1BC64E5900D80790 /* dsa.h */,
+				18ED3F001BC64E5900D80790 /* dso.h */,
+				18ED3F011BC64E5900D80790 /* dtls1.h */,
+				18ED3F021BC64E5900D80790 /* e_os2.h */,
+				18ED3F031BC64E5900D80790 /* ebcdic.h */,
+				18ED3F041BC64E5900D80790 /* ec.h */,
+				18ED3F051BC64E5900D80790 /* ecdh.h */,
+				18ED3F061BC64E5900D80790 /* ecdsa.h */,
+				18ED3F071BC64E5900D80790 /* engine.h */,
+				18ED3F081BC64E5900D80790 /* err.h */,
+				18ED3F091BC64E5900D80790 /* evp.h */,
+				18ED3F0A1BC64E5900D80790 /* hmac.h */,
+				18ED3F0B1BC64E5900D80790 /* idea.h */,
+				18ED3F0C1BC64E5900D80790 /* krb5_asn.h */,
+				18ED3F0D1BC64E5900D80790 /* kssl.h */,
+				18ED3F0E1BC64E5900D80790 /* lhash.h */,
+				18ED3F0F1BC64E5900D80790 /* md4.h */,
+				18ED3F101BC64E5900D80790 /* md5.h */,
+				18ED3F111BC64E5900D80790 /* mdc2.h */,
+				18ED3F121BC64E5900D80790 /* modes.h */,
+				18ED3F131BC64E5900D80790 /* obj_mac.h */,
+				18ED3F141BC64E5900D80790 /* objects.h */,
+				18ED3F151BC64E5900D80790 /* ocsp.h */,
+				18ED3F161BC64E5900D80790 /* opensslconf.h */,
+				18ED3F171BC64E5900D80790 /* opensslv.h */,
+				18ED3F181BC64E5900D80790 /* ossl_typ.h */,
+				18ED3F191BC64E5900D80790 /* pem.h */,
+				18ED3F1A1BC64E5900D80790 /* pem2.h */,
+				18ED3F1B1BC64E5900D80790 /* pkcs12.h */,
+				18ED3F1C1BC64E5900D80790 /* pkcs7.h */,
+				18ED3F1D1BC64E5900D80790 /* pqueue.h */,
+				18ED3F1E1BC64E5900D80790 /* rand.h */,
+				18ED3F1F1BC64E5900D80790 /* rc2.h */,
+				18ED3F201BC64E5900D80790 /* rc4.h */,
+				18ED3F211BC64E5900D80790 /* ripemd.h */,
+				18ED3F221BC64E5900D80790 /* rsa.h */,
+				18ED3F231BC64E5900D80790 /* safestack.h */,
+				18ED3F241BC64E5900D80790 /* seed.h */,
+				18ED3F251BC64E5900D80790 /* sha.h */,
+				18ED3F261BC64E5900D80790 /* srp.h */,
+				18ED3F271BC64E5900D80790 /* srtp.h */,
+				18ED3F281BC64E5900D80790 /* ssl.h */,
+				18ED3F291BC64E5900D80790 /* ssl2.h */,
+				18ED3F2A1BC64E5900D80790 /* ssl23.h */,
+				18ED3F2B1BC64E5900D80790 /* ssl3.h */,
+				18ED3F2C1BC64E5900D80790 /* stack.h */,
+				18ED3F2D1BC64E5900D80790 /* symhacks.h */,
+				18ED3F2E1BC64E5900D80790 /* tls1.h */,
+				18ED3F2F1BC64E5900D80790 /* ts.h */,
+				18ED3F301BC64E5900D80790 /* txt_db.h */,
+				18ED3F311BC64E5900D80790 /* ui.h */,
+				18ED3F321BC64E5900D80790 /* ui_compat.h */,
+				18ED3F331BC64E5900D80790 /* whrlpool.h */,
+				18ED3F341BC64E5900D80790 /* x509.h */,
+				18ED3F351BC64E5900D80790 /* x509_vfy.h */,
+				18ED3F361BC64E5900D80790 /* x509v3.h */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		18ED3F391BC64E5900D80790 /* SeckenNetApi */ = {
+			isa = PBXGroup;
+			children = (
+				18ED3F3A1BC64E5900D80790 /* SeckenNetApi.h */,
+				18ED3F3B1BC64E5900D80790 /* SeckenNetApi.m */,
+			);
+			path = SeckenNetApi;
+			sourceTree = "<group>";
+		};
+		18ED3F3C1BC64E5900D80790 /* SeckenRSA */ = {
+			isa = PBXGroup;
+			children = (
+				18ED3F3D1BC64E5900D80790 /* secken_base_64.c */,
+				18ED3F3E1BC64E5900D80790 /* secken_base_64.h */,
+				18ED3F3F1BC64E5900D80790 /* secken_rsa.c */,
+				18ED3F401BC64E5900D80790 /* secken_rsa.h */,
+				18ED3F411BC64E5900D80790 /* SeckenOpenSSLRSAWrapper.h */,
+				18ED3F421BC64E5900D80790 /* SeckenOpenSSLRSAWrapper.m */,
+				18ED3F431BC64E5900D80790 /* SeckenParamsEncrypt.h */,
+				18ED3F441BC64E5900D80790 /* SeckenParamsEncrypt.m */,
+				18ED3F451BC64E5900D80790 /* SeckenRSA.h */,
+				18ED3F461BC64E5900D80790 /* SeckenRSA.m */,
+			);
+			path = SeckenRSA;
+			sourceTree = "<group>";
+		};
+		18ED3F471BC64E5900D80790 /* SeckenSDK */ = {
+			isa = PBXGroup;
+			children = (
+				18ED3F481BC64E5900D80790 /* SeckenSDK.h */,
+				18ED3F491BC64E5900D80790 /* SeckenSDK.m */,
+				18ED3F4A1BC64E5900D80790 /* VoiceConfirmSDK.h */,
+				18ED3F4B1BC64E5900D80790 /* VoiceConfirmSDK.m */,
+			);
+			path = SeckenSDK;
+			sourceTree = "<group>";
+		};
+		18ED3F4C1BC64E5900D80790 /* SeckenSoket */ = {
+			isa = PBXGroup;
+			children = (
+				18CAECDB1BF05F5600C22882 /* SeckenGCDAsyncSocket.h */,
+				18CAECDC1BF05F5600C22882 /* SeckenGCDAsyncSocket.m */,
+				18CAECDD1BF05F5600C22882 /* SeckenGCDAsyncUdpSocket.h */,
+				18CAECDE1BF05F5600C22882 /* SeckenGCDAsyncUdpSocket.m */,
+				18ED3F4D1BC64E5900D80790 /* SeckenAsyncSocket.h */,
+				18ED3F4E1BC64E5900D80790 /* SeckenAsyncSocket.m */,
+				18ED3F4F1BC64E5900D80790 /* SeckenSingleton.h */,
+				18ED3F501BC64E5900D80790 /* SeckenSingleton.m */,
+			);
+			path = SeckenSoket;
+			sourceTree = "<group>";
+		};
+		18ED3F511BC64E5900D80790 /* SeckenVoice */ = {
+			isa = PBXGroup;
+			children = (
+				18C621B31C102041003F3B62 /* SeckenImage.bundle */,
+				18ED40171BC662C300D80790 /* SeckenVoiceConfirm.h */,
+				18ED40181BC662C300D80790 /* SeckenVoiceConfirm.m */,
+				18ED40191BC662C300D80790 /* SeckenVoiceDelete.h */,
+				18ED401A1BC662C300D80790 /* SeckenVoiceDelete.m */,
+				18ED401B1BC662C300D80790 /* SeckenVoiceTrain.h */,
+				18ED401C1BC662C300D80790 /* SeckenVoiceTrain.m */,
+			);
+			path = SeckenVoice;
+			sourceTree = "<group>";
+		};
+		18ED405B1BC6818700D80790 /* MSC */ = {
+			isa = PBXGroup;
+			children = (
+				18ED405C1BC6818700D80790 /* IFlyContact.h */,
+				18ED405D1BC6818700D80790 /* IFlyDataDownloader.h */,
+				18ED405E1BC6818700D80790 /* IFlyDataUploader.h */,
+				18ED405F1BC6818700D80790 /* IFlyISVDelegate.h */,
+				18ED40601BC6818700D80790 /* IFlyISVRecognizer.h */,
+				18ED40611BC6818700D80790 /* iflyMSC */,
+				18ED40621BC6818700D80790 /* IFlyRecognizerView.h */,
+				18ED40631BC6818700D80790 /* IFlyRecognizerViewDelegate.h */,
+				18ED40641BC6818700D80790 /* IFlySetting.h */,
+				18ED40651BC6818700D80790 /* IFlySpeechError.h */,
+				18ED40661BC6818700D80790 /* IFlySpeechRecognizer.h */,
+				18ED40671BC6818700D80790 /* IFlySpeechRecognizerDelegate.h */,
+				18ED40681BC6818700D80790 /* IFlySpeechSynthesizer.h */,
+				18ED40691BC6818700D80790 /* IFlySpeechSynthesizerDelegate.h */,
+				18ED406A1BC6818700D80790 /* IFlySpeechUser.h */,
+				18ED406B1BC6818700D80790 /* IFlySpeechUtility.h */,
+				18ED406C1BC6818700D80790 /* IFlyUserWords.h */,
+			);
+			path = MSC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		18ED3EAF1BC64D8600D80790 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ED40221BC662C300D80790 /* SeckenVoiceTrain.h in Headers */,
+				18ED40201BC662C300D80790 /* SeckenVoiceDelete.h in Headers */,
+				18ED401E1BC662C300D80790 /* SeckenVoiceConfirm.h in Headers */,
+				18ED3FDC1BC64E5900D80790 /* SeckenSDK.h in Headers */,
+				18ED40741BC6818700D80790 /* IFlyRecognizerViewDelegate.h in Headers */,
+				18ED3FA61BC64E5900D80790 /* md4.h in Headers */,
+				18ED40701BC6818700D80790 /* IFlyISVDelegate.h in Headers */,
+				18ED3FA01BC64E5900D80790 /* evp.h in Headers */,
+				18ED3FBE1BC64E5900D80790 /* srtp.h in Headers */,
+				18ED407C1BC6818700D80790 /* IFlySpeechUtility.h in Headers */,
+				18ED3F981BC64E5900D80790 /* dtls1.h in Headers */,
+				18ED40791BC6818700D80790 /* IFlySpeechSynthesizer.h in Headers */,
+				18ED3FBC1BC64E5900D80790 /* sha.h in Headers */,
+				18ED3FC81BC64E5900D80790 /* ui.h in Headers */,
+				18ED3F9D1BC64E5900D80790 /* ecdsa.h in Headers */,
+				18ED406E1BC6818700D80790 /* IFlyDataDownloader.h in Headers */,
+				18ED3F681BC64E5900D80790 /* SeckenBaseInfo.h in Headers */,
+				18ED3F621BC64E5900D80790 /* SeckenBase64.h in Headers */,
+				18ED3FB61BC64E5900D80790 /* rc2.h in Headers */,
+				18ED3FAE1BC64E5900D80790 /* opensslv.h in Headers */,
+				18ED3F921BC64E5900D80790 /* crypto.h in Headers */,
+				18ED3FC41BC64E5900D80790 /* symhacks.h in Headers */,
+				18ED3F891BC64E5900D80790 /* bn.h in Headers */,
+				18ED3FB21BC64E5900D80790 /* pkcs12.h in Headers */,
+				18ED3FBD1BC64E5900D80790 /* srp.h in Headers */,
+				18ED3F8C1BC64E5900D80790 /* cast.h in Headers */,
+				18ED3FB81BC64E5900D80790 /* ripemd.h in Headers */,
+				18ED3FA71BC64E5900D80790 /* md5.h in Headers */,
+				18ED3F721BC64E5900D80790 /* SeckenAFHTTPSessionManager.h in Headers */,
+				18ED3F8F1BC64E5900D80790 /* comp.h in Headers */,
+				18ED3F791BC64E5900D80790 /* SeckenAFURLConnectionOperation.h in Headers */,
+				18ED3F8E1BC64E5900D80790 /* cms.h in Headers */,
+				18ED3FB01BC64E5900D80790 /* pem.h in Headers */,
+				18ED3FB11BC64E5900D80790 /* pem2.h in Headers */,
+				18ED3FE21BC64E5900D80790 /* SeckenSingleton.h in Headers */,
+				18ED3F971BC64E5900D80790 /* dso.h in Headers */,
+				18ED3FAA1BC64E5900D80790 /* obj_mac.h in Headers */,
+				18ED3FCA1BC64E5900D80790 /* whrlpool.h in Headers */,
+				18ED3FAD1BC64E5900D80790 /* opensslconf.h in Headers */,
+				18ED3FC51BC64E5900D80790 /* tls1.h in Headers */,
+				18ED3F951BC64E5900D80790 /* dh.h in Headers */,
+				18ED40711BC6818700D80790 /* IFlyISVRecognizer.h in Headers */,
+				18ED3F7F1BC64E5900D80790 /* SeckenAFURLSessionManager.h in Headers */,
+				18ED3F831BC64E5900D80790 /* aes.h in Headers */,
+				18ED406D1BC6818700D80790 /* IFlyContact.h in Headers */,
+				18ED3F8A1BC64E5900D80790 /* buffer.h in Headers */,
+				18ED3F701BC64E5900D80790 /* SeckenAFHTTPRequestOperationManager.h in Headers */,
+				18ED3FA31BC64E5900D80790 /* krb5_asn.h in Headers */,
+				18ED3FAF1BC64E5900D80790 /* ossl_typ.h in Headers */,
+				18ED3FDA1BC64E5900D80790 /* SeckenRSA.h in Headers */,
+				18ED407A1BC6818700D80790 /* IFlySpeechSynthesizerDelegate.h in Headers */,
+				18ED406F1BC6818700D80790 /* IFlyDataUploader.h in Headers */,
+				18ED3FBB1BC64E5900D80790 /* seed.h in Headers */,
+				18ED3FCC1BC64E5900D80790 /* x509_vfy.h in Headers */,
+				18ED3F641BC64E5900D80790 /* SeckenCommonCrypto.h in Headers */,
+				18ED3F841BC64E5900D80790 /* asn1.h in Headers */,
+				18ED3FB91BC64E5900D80790 /* rsa.h in Headers */,
+				18ED3F6A1BC64E5900D80790 /* SecKenKeychain.h in Headers */,
+				18ED3F871BC64E5900D80790 /* bio.h in Headers */,
+				18CAECE11BF05F5600C22882 /* SeckenGCDAsyncUdpSocket.h in Headers */,
+				18ED3FB31BC64E5900D80790 /* pkcs7.h in Headers */,
+				18ED3FC71BC64E5900D80790 /* txt_db.h in Headers */,
+				18ED3FC31BC64E5900D80790 /* stack.h in Headers */,
+				18ED40AF1BC7B88B00D80790 /* SeckenLocalized.h in Headers */,
+				18ED3F9A1BC64E5900D80790 /* ebcdic.h in Headers */,
+				18ED3FAC1BC64E5900D80790 /* ocsp.h in Headers */,
+				18ED3F9B1BC64E5900D80790 /* ec.h in Headers */,
+				18ED3F6C1BC64E5900D80790 /* SecKenKeychainQuery.h in Headers */,
+				18ED3FA91BC64E5900D80790 /* modes.h in Headers */,
+				18ED3FE01BC64E5900D80790 /* SeckenAsyncSocket.h in Headers */,
+				18ED3FD51BC64E5900D80790 /* secken_rsa.h in Headers */,
+				18ED3F8D1BC64E5900D80790 /* cmac.h in Headers */,
+				18ED3F861BC64E5900D80790 /* asn1t.h in Headers */,
+				18ED3F8B1BC64E5900D80790 /* camellia.h in Headers */,
+				18ED407D1BC6818700D80790 /* IFlyUserWords.h in Headers */,
+				18CAECDF1BF05F5600C22882 /* SeckenGCDAsyncSocket.h in Headers */,
+				18ED3F7D1BC64E5900D80790 /* SeckenAFURLResponseSerialization.h in Headers */,
+				18ED3F9C1BC64E5900D80790 /* ecdh.h in Headers */,
+				18ED3F941BC64E5900D80790 /* des_old.h in Headers */,
+				18ED3FC11BC64E5900D80790 /* ssl23.h in Headers */,
+				18ED3FAB1BC64E5900D80790 /* objects.h in Headers */,
+				18ED3FCD1BC64E5900D80790 /* x509v3.h in Headers */,
+				18ED3FCB1BC64E5900D80790 /* x509.h in Headers */,
+				18ED3FA51BC64E5900D80790 /* lhash.h in Headers */,
+				18ED3F601BC64E5900D80790 /* SeckenAESCrypt.h in Headers */,
+				18ED3F771BC64E5900D80790 /* SeckenAFSecurityPolicy.h in Headers */,
+				18ED3FB41BC64E5900D80790 /* pqueue.h in Headers */,
+				18ED3FBF1BC64E5900D80790 /* ssl.h in Headers */,
+				18ED3FBA1BC64E5900D80790 /* safestack.h in Headers */,
+				18ED40781BC6818700D80790 /* IFlySpeechRecognizerDelegate.h in Headers */,
+				18ED40761BC6818700D80790 /* IFlySpeechError.h in Headers */,
+				18ED3F9E1BC64E5900D80790 /* engine.h in Headers */,
+				18ED3F991BC64E5900D80790 /* e_os2.h in Headers */,
+				18ED3FC21BC64E5900D80790 /* ssl3.h in Headers */,
+				18ED3FD31BC64E5900D80790 /* secken_base_64.h in Headers */,
+				18ED3FA81BC64E5900D80790 /* mdc2.h in Headers */,
+				18ED3F751BC64E5900D80790 /* SeckenAFNetworkReachabilityManager.h in Headers */,
+				18ED3FC61BC64E5900D80790 /* ts.h in Headers */,
+				18ED3FA11BC64E5900D80790 /* hmac.h in Headers */,
+				18ED3F7B1BC64E5900D80790 /* SeckenAFURLRequestSerialization.h in Headers */,
+				1846D5C51BE9B7B500D8F3A6 /* SeckenAFNetworking.h in Headers */,
+				18ED3FA41BC64E5900D80790 /* kssl.h in Headers */,
+				18ED3FC91BC64E5900D80790 /* ui_compat.h in Headers */,
+				18ED3FB51BC64E5900D80790 /* rand.h in Headers */,
+				18ED3FC01BC64E5900D80790 /* ssl2.h in Headers */,
+				18ED3FD61BC64E5900D80790 /* SeckenOpenSSLRSAWrapper.h in Headers */,
+				18ED3F671BC64E5900D80790 /* SeckenAppConst.h in Headers */,
+				18ED3FD01BC64E5900D80790 /* SeckenNetApi.h in Headers */,
+				18ED3FD81BC64E5900D80790 /* SeckenParamsEncrypt.h in Headers */,
+				18ED3FB71BC64E5900D80790 /* rc4.h in Headers */,
+				18ED40771BC6818700D80790 /* IFlySpeechRecognizer.h in Headers */,
+				18ED40751BC6818700D80790 /* IFlySetting.h in Headers */,
+				18ED3F901BC64E5900D80790 /* conf.h in Headers */,
+				18ED3F881BC64E5900D80790 /* blowfish.h in Headers */,
+				18ED407B1BC6818700D80790 /* IFlySpeechUser.h in Headers */,
+				18ED3F6E1BC64E5900D80790 /* SeckenAFHTTPRequestOperation.h in Headers */,
+				18ED3FDE1BC64E5900D80790 /* VoiceConfirmSDK.h in Headers */,
+				18ED3F851BC64E5900D80790 /* asn1_mac.h in Headers */,
+				18ED3F911BC64E5900D80790 /* conf_api.h in Headers */,
+				18ED3F931BC64E5900D80790 /* des.h in Headers */,
+				18ED3F9F1BC64E5900D80790 /* err.h in Headers */,
+				18ED40731BC6818700D80790 /* IFlyRecognizerView.h in Headers */,
+				18ED3F961BC64E5900D80790 /* dsa.h in Headers */,
+				18ED3FA21BC64E5900D80790 /* idea.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		189F8F401BAE7EE00021E473 /* SeckenApiSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189F8F581BAE7EE00021E473 /* Build configuration list for PBXNativeTarget "SeckenApiSDK" */;
+			buildPhases = (
+				189F8F3D1BAE7EE00021E473 /* Sources */,
+				189F8F3E1BAE7EE00021E473 /* Frameworks */,
+				189F8F3F1BAE7EE00021E473 /* Resources */,
+				18C6F16B1BD4F19C00A6497F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18C6F16A1BD4F19C00A6497F /* PBXTargetDependency */,
+			);
+			name = SeckenApiSDK;
+			productName = SeckenApiSDK;
+			productReference = 189F8F411BAE7EE00021E473 /* SeckenApiSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18ED3EB11BC64D8600D80790 /* SeckenSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18ED3EBB1BC64D8600D80790 /* Build configuration list for PBXNativeTarget "SeckenSDK" */;
+			buildPhases = (
+				18ED3EAD1BC64D8600D80790 /* Sources */,
+				18ED3EAE1BC64D8600D80790 /* Frameworks */,
+				18ED3EAF1BC64D8600D80790 /* Headers */,
+				18ED3EB01BC64D8600D80790 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeckenSDK;
+			productName = SeckenSDK;
+			productReference = 18ED3EB21BC64D8600D80790 /* SeckenSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		189F8F391BAE7EE00021E473 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Secken_ck;
+				TargetAttributes = {
+					189F8F401BAE7EE00021E473 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					18ED3EB11BC64D8600D80790 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					18ED3FF11BC64F1200D80790 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 189F8F3C1BAE7EE00021E473 /* Build configuration list for PBXProject "SeckenApiSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 189F8F381BAE7EE00021E473;
+			productRefGroup = 189F8F421BAE7EE00021E473 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				189F8F401BAE7EE00021E473 /* SeckenApiSDK */,
+				18ED3EB11BC64D8600D80790 /* SeckenSDK */,
+				18ED3FF11BC64F1200D80790 /* CommonSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		189F8F3F1BAE7EE00021E473 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189F8F541BAE7EE00021E473 /* LaunchScreen.storyboard in Resources */,
+				189F8F511BAE7EE00021E473 /* Assets.xcassets in Resources */,
+				18CC5E211BEB3B46000DEE12 /* TestFace.jpg in Resources */,
+				189F8F4F1BAE7EE00021E473 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ED3EB01BC64D8600D80790 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C621B41C102041003F3B62 /* SeckenImage.bundle in Resources */,
+				18ED3F821BC64E5900D80790 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18ED3FF71BC64F5F00D80790 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\n\nFMK_NAME=\"SeckenSDK\"\n\n\n\n# Install dir will be the final output to the framework.\n\n# The following line create it in the root folder of the current project.\n\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n\n\n# Working dir will be deleted after the framework creation.\n\nWRK_DIR=build\n\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\n\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n\n\n# -configuration ${CONFIGURATION}\n\n# Clean and Building both architectures.\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n\n\n\n# Cleaning the oldest.\n\nif [ -d \"${INSTALL_DIR}\" ]\n\nthen\n\nrm -rf \"${INSTALL_DIR}\"\n\nfi\n\n\n\nmkdir -p \"${INSTALL_DIR}\"\n\n\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\n\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\n\n\nrm -r \"${WRK_DIR}\"\n\n\n\nopen \"${INSTALL_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		189F8F3D1BAE7EE00021E473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189F8F4C1BAE7EE00021E473 /* ViewController.m in Sources */,
+				189F8F491BAE7EE00021E473 /* AppDelegate.m in Sources */,
+				189F8F461BAE7EE00021E473 /* main.m in Sources */,
+				18CC5E1F1BEB00B3000DEE12 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ED3EAD1BC64D8600D80790 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ED3F801BC64E5900D80790 /* SeckenAFURLSessionManager.m in Sources */,
+				18ED3FD41BC64E5900D80790 /* secken_rsa.c in Sources */,
+				18ED3F611BC64E5900D80790 /* SeckenAESCrypt.m in Sources */,
+				18ED3FDD1BC64E5900D80790 /* SeckenSDK.m in Sources */,
+				18ED3F6D1BC64E5900D80790 /* SecKenKeychainQuery.m in Sources */,
+				18ED3FD11BC64E5900D80790 /* SeckenNetApi.m in Sources */,
+				18ED3F761BC64E5900D80790 /* SeckenAFNetworkReachabilityManager.m in Sources */,
+				18ED3F6B1BC64E5900D80790 /* SecKenKeychain.m in Sources */,
+				18ED3FDB1BC64E5900D80790 /* SeckenRSA.m in Sources */,
+				18ED40211BC662C300D80790 /* SeckenVoiceDelete.m in Sources */,
+				18ED3FD71BC64E5900D80790 /* SeckenOpenSSLRSAWrapper.m in Sources */,
+				18ED3F7A1BC64E5900D80790 /* SeckenAFURLConnectionOperation.m in Sources */,
+				18ED3F731BC64E5900D80790 /* SeckenAFHTTPSessionManager.m in Sources */,
+				18ED3FDF1BC64E5900D80790 /* VoiceConfirmSDK.m in Sources */,
+				18ED3F7C1BC64E5900D80790 /* SeckenAFURLRequestSerialization.m in Sources */,
+				18ED3FE11BC64E5900D80790 /* SeckenAsyncSocket.m in Sources */,
+				18CAECE21BF05F5600C22882 /* SeckenGCDAsyncUdpSocket.m in Sources */,
+				18ED3F631BC64E5900D80790 /* SeckenBase64.m in Sources */,
+				18CAECE01BF05F5600C22882 /* SeckenGCDAsyncSocket.m in Sources */,
+				18ED3F651BC64E5900D80790 /* SeckenCommonCrypto.m in Sources */,
+				18ED3F691BC64E5900D80790 /* SeckenBaseInfo.m in Sources */,
+				18ED3FD91BC64E5900D80790 /* SeckenParamsEncrypt.m in Sources */,
+				18ED3F711BC64E5900D80790 /* SeckenAFHTTPRequestOperationManager.m in Sources */,
+				18ED401F1BC662C300D80790 /* SeckenVoiceConfirm.m in Sources */,
+				18ED40231BC662C300D80790 /* SeckenVoiceTrain.m in Sources */,
+				18ED3F781BC64E5900D80790 /* SeckenAFSecurityPolicy.m in Sources */,
+				18ED3F7E1BC64E5900D80790 /* SeckenAFURLResponseSerialization.m in Sources */,
+				18ED3FD21BC64E5900D80790 /* secken_base_64.c in Sources */,
+				18ED3F6F1BC64E5900D80790 /* SeckenAFHTTPRequestOperation.m in Sources */,
+				18ED3FE31BC64E5900D80790 /* SeckenSingleton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18C6F16A1BD4F19C00A6497F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18ED3EB11BC64D8600D80790 /* SeckenSDK */;
+			targetProxy = 18C6F1691BD4F19C00A6497F /* PBXContainerItemProxy */;
+		};
+		18ED40B11BC7C60800D80790 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18ED3EB11BC64D8600D80790 /* SeckenSDK */;
+			targetProxy = 18ED40B01BC7C60800D80790 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		189F8F4D1BAE7EE00021E473 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				189F8F4E1BAE7EE00021E473 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		189F8F521BAE7EE00021E473 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				189F8F531BAE7EE00021E473 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		189F8F561BAE7EE00021E473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		189F8F571BAE7EE00021E473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		189F8F591BAE7EE00021E473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeckenApiSDK/SeckenSDK/SeckenLibs",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/iflyMSC",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/SeckenApiSDK/SeckenSDK/SeckenLibs/openssl",
+					"$(PROJECT_DIR)/SeckenApiSDK/SeckenSDK/SeckenSDK",
+				);
+				INFOPLIST_FILE = SeckenApiSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeckenApiSDK/SeckenSDK/SeckenLibs/openssl",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/iflyMSC",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/iflyMSClib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.secken.CreateSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		189F8F5A1BAE7EE00021E473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeckenApiSDK/SeckenSDK/SeckenLibs",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/iflyMSC",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/SeckenApiSDK/SeckenSDK/SeckenLibs/openssl",
+					"$(PROJECT_DIR)/SeckenApiSDK/SeckenSDK/SeckenSDK",
+				);
+				INFOPLIST_FILE = SeckenApiSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeckenApiSDK/SeckenSDK/SeckenLibs/openssl",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/iflyMSC",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/iflyMSClib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.secken.CreateSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18ED3EBC1BC64D8600D80790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/openssl",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/openssl/include",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/openssl",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/openssl/include",
+				);
+				INFOPLIST_FILE = SeckenSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/openssl",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/MSC",
+				);
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.secken.SeckenSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7s armv7 arm64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18ED3EBD1BC64D8600D80790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/openssl",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/openssl/include",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/openssl",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/openssl/include",
+				);
+				INFOPLIST_FILE = SeckenSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/openssl",
+					"$(PROJECT_DIR)/SeckenSDK/SeckenLibs/MSC",
+				);
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.secken.SeckenSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7s armv7 arm64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		18ED3FF31BC64F1200D80790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18ED3FF41BC64F1200D80790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		189F8F3C1BAE7EE00021E473 /* Build configuration list for PBXProject "SeckenApiSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189F8F561BAE7EE00021E473 /* Debug */,
+				189F8F571BAE7EE00021E473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		189F8F581BAE7EE00021E473 /* Build configuration list for PBXNativeTarget "SeckenApiSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189F8F591BAE7EE00021E473 /* Debug */,
+				189F8F5A1BAE7EE00021E473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18ED3EBB1BC64D8600D80790 /* Build configuration list for PBXNativeTarget "SeckenSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18ED3EBC1BC64D8600D80790 /* Debug */,
+				18ED3EBD1BC64D8600D80790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18ED3FF21BC64F1200D80790 /* Build configuration list for PBXAggregateTarget "CommonSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18ED3FF31BC64F1200D80790 /* Debug */,
+				18ED3FF41BC64F1200D80790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 189F8F391BAE7EE00021E473 /* Project object */;
+}
